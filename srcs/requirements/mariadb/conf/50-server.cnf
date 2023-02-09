@@ -1,0 +1,59 @@
+[server]
+
+[mysqld]
+
+#Specify the user who run the service
+
+user                    = root
+
+#Specify the file who will hold the pid of the mysql instance
+
+pid-file                = /run/mysqld/mysqld.pid
+
+#Specify the file used as a socket for communication
+
+socket                  = /run/mysqld/mysqld.sock
+
+#Mysql base instalation directory
+
+basedir                 = /usr
+
+#Mysql data directory
+
+datadir                 = /var/lib/mysql
+
+#Directory where tmpfile are stored
+
+tmpdir                  = /tmp
+
+#Directory where default error are located
+
+lc-messages-dir         = /usr/share/mysql
+
+#Set the server to accept all TCP/IP IPV4 connection from the host
+
+bind-address            = 0.0.0.0
+
+#Maximum query size
+
+query_cache_size        = 16M
+
+#File where error log are write
+
+log_error = /var/log/mysql/error.log
+
+#Day before error log are deleted
+
+expire_logs_days        = 10
+
+#Allow the server to use unicode
+
+character-set-server  = utf8
+collation-server      = utf8_general_ci
+
+[embedded]
+
+[mariadb]
+
+[mariadb-10.3]
+
